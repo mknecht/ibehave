@@ -1,0 +1,5 @@
+{
+    "name": "Behave",
+    "argv":["python","-m","behave_kernel", "-f", "{connection_file}"],
+    "display_name":"Behave"
+}
