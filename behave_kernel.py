@@ -78,7 +78,7 @@ class BehaveKernel(Kernel):
         with codecs.open(filepath, "w+", encoding="utf-8") as f:
             f.write(u"\n".join(self.history[:-1]))
 
-        stdout, _ = subprocess.Popen("/home/murat/.local/bin/behave {}".format(filepath), shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT).communicate()
+        stdout, _ = subprocess.Popen("behave {}".format(filepath), shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT).communicate()
         return stdout
 
 
